@@ -1,42 +1,42 @@
 // 1. Ստեղծել Rectangle class,որը կունենա length և width,կունենա getters,setters համապատասխան դաշտերի համար,getArea() method(մակերես) ,getPerimeter() (պարագիծ) method և toString() method։
 
 
-// class Rectangle {
-//   constructor(length, width) {
-//     this.length = length,
-//     this.width = width
-//   }
+class Rectangle {
+  constructor(length, width) {
+    this.length = length,
+    this.width = width
+  }
 
-//   get getLength(){
-//     return this.length;
-//   }
-//   set setLength(newLength){
-//     this.length = newLength;
-//   }
+  get getLength(){
+    return this.length;
+  }
+  set setLength(newLength){
+    this.length = newLength;
+  }
 
-//   get getWidth(){
-//     return this.width;
-//   }
-//   set setWidth(newWidth){
-//     this.width = newWidth;
-//   }
+  get getWidth(){
+    return this.width;
+  }
+  set setWidth(newWidth){
+    this.width = newWidth;
+  }
 
-//   getArea(width, length){
-//     return `Area of rectangle is ${this.width * this.length}.`;
-//   }
+  getArea(width, length){
+    return `Area of rectangle is ${this.width * this.length}.`;
+  }
 
-//   getPerimeter(width, length){
-//     return `Perimeter of rectangle is ${(this.width + this.length) * 2}.`;
-//   }
+  getPerimeter(width, length){
+    return `Perimeter of rectangle is ${(this.width + this.length) * 2}.`;
+  }
 
-//   toString(){
-//     return `Length is ${this.length}m and width is ${this.width}m.`;
-//   }
-// }
+  toString(){
+    return `Length is ${this.length}m and width is ${this.width}m.`;
+  }
+}
 
-// let rectangle = new Rectangle(10, 14);
+let rectangle = new Rectangle(10, 14);
 
-// console.log(rectangle.getArea());
+console.log(rectangle.getArea());
 
 
 
@@ -89,7 +89,7 @@ class Person {
   }
 
   toString(){
-    return `Hello ${this.firstName} ${this.lastName}, you are a ${this.gender} and you are ${this.age} years old.`
+    return `Hello, I am ${this.firstName} ${this.lastName}.\nI am a ${this.gender} and I am a ${this.age} years old.`
   }
 }
 
@@ -97,8 +97,8 @@ class Person {
 // Class Student
 
 class Student extends Person {
-  constructor(firstName, lastName, program, year){
-    super()
+  constructor(program, year){
+    super(),
     this.program = program,
     this.year = year
   }
@@ -118,8 +118,7 @@ class Student extends Person {
   }
 
   toString(){
-    super.toString()
-    return `You are teaching ${this.program} and you are ${this.year} course.`;
+    return `Hello I am a student.\nI am studying ${this.program.join(', ')} and I am ${this.year}rd course.`;
   }
 }
 
@@ -127,8 +126,8 @@ class Student extends Person {
 // Class Teacher
 
 class Teacher extends Person{
-  constructor(firstName, program){
-    super(firstName)
+  constructor(program){
+    super(),
     this.program = program
   }
   
@@ -139,14 +138,15 @@ class Teacher extends Person{
     this.program = newProgram;
   }
   toString(){
-    return ``
+    return `Hello I am a teacher and I am teaching ${this.program}.`
   }
 }
 
-let person = new Person();
-let student = new Student('Steve', ['Math', 'Phisics'], 3)
-let teacher = new Teacher();
-console.log(student.toString());
+let person = new Person('Aram', 'Zadoyan', 'Male', 21);
+let student = new Student(['Math', 'Physics', 'Programming'], 3);
+let teacher = new Teacher('Math Pysics Programming');
+console.log(teacher.toString());
+
 
 
 
