@@ -18,7 +18,7 @@ class Account {
     this.name = name,
     this.balance = balance
   }
-  set setName(newName) {
+  set setName(newName) {  
     this.name = newName;
   }
   set setBalance(newBalance) {
