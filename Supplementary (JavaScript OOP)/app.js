@@ -14,7 +14,9 @@ It should have toString method.*/
 
 class Account {
   constructor(id, name, balance) {
-    (this._id = id), (this.name = name), (this.balance = balance);
+    this._id = id, 
+    this.name = name,
+    this.balance = balance
   }
   set setName(newName) {
     this.name = newName;
