@@ -72,6 +72,7 @@ const account = new Account(3108, "Aram", 10000);
 const anotherAccount = new Object();
 anotherAccount.name = "Steve";
 
+
 console.log(account.toString());
 console.log(account.credit(2000));
 console.log(account.debit(500));
