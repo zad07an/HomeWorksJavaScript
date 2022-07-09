@@ -54,12 +54,12 @@ catchErrors();
 
 /* 2. div Ֆունկցիա գրեք,որը 2 արգումենտ կստանա և առաջինը կբաժանի երկրորդի վրա ու կվերադարձնի արդյունքը,ստուգել երբ բաժանարարը 0 է, throw new Error անելլ որևէ massage-ով։*/
 
-let div = (first, seconde) => {
-  if ( seconde === 0) {
-    throw new Error (`ReferenceError: can't divide by 0.`)
+let div = (a, b) => {
+  let result = a / b;
+  if (a == 0 || b == 0){
+    throw new Error (`Can't divide by 0.`)
   }
-  let result = first / seconde;
   console.log(result);
 }
 
-div(10, 0);
+div(10,0)
