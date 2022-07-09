@@ -23,7 +23,7 @@ let catchErrors = () =>{
   } finally {
     console.log('Continue...');
   }
-  // Error N3 ReferenceError
+  // Error N2 ReferenceError
   try{
     console.log(ar);
   } catch (err) {
