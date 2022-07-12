@@ -56,10 +56,10 @@ catchErrors();
 
 let div = (a, b) => {
   let result = a / b;
-  if (a == 0 || b == 0){
+  if (b == 0){
     throw new Error (`Can't divide by 0.`)
   }
-  console.log(result);
+  console.log(`${a} / ${b} = ${result}`);
 }
 
 div(10,0)
