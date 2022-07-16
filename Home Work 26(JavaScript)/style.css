@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Crete+Round&family=Mukta&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: mukta;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+  background: cover;
+}
+
+.content{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainMonitor{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 46, 46, 0.568);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.boldFont{
+  font-weight: bolder;
+}
+
+.italicFont{
+  font-style: italic;
+}
+
+.throughLine{
+  text-decoration: line-through;
+}
+
+.underLine{
+  text-decoration: underline;
+}
+
+.capitalizeFont{
+  text-transform: capitalize;
+}
+
+.redFont{
+  color: red;
+}
+
+.greenFont{
+  color: green;
+}
+
+.output{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 750px;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  color: #bbbbbb;
+  background: rgb(0, 0, 0);
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+.mainButtons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 35px;
+  width: 100%;
+  height: 150px;
+}
+
+.upperButtons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.lowerButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  height: 50%;
+}
+
+.boldButton{
+  width: 150px;
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: black;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.boldButton:hover{
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid white;
+  transform: scale(1.2);
+}
+
+.italicButton{
+  width: 150px;
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.italicButton:hover{
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  transform: scale(1.2);
+}
+
+.lineThroughButton{
+  text-decoration: line-through 2px solid;
+  width: 150px;
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.lineThroughButton:hover{
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  transform: scale(1.2);
+}
+
+.underLineButton{
+  text-decoration: underline 2px solid;
+  width: 150px;
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.underLineButton:hover{
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.capitalizeButton{
+  width: 150px;
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.capitalizeButton:hover{
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  transform: scale(1.2);
+}
+
+.redButton{
+  width: 150px;
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: red;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+.redButton:hover{
+  background: white;
+  color: red;
+  border: 2px solid white;
+  transform: scale(1.2);
+}
+
+.greenButton{
+  width: 150px;
+  min-height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: green;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.greenButton:hover{
+  background: white;
+  color: green;
+  border-bottom: 2px solid white;
+  transform: scale(1.2);
+}
+
+.secondMonitor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 46, 46, 0.568);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.input{
+  width: 650px;
+  height: 80px;
+  border-radius: 20px;
+  background: black;
+  color: #bbbbbb;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 20px;
+  transition: .5s;
+}
+
+.input::placeholder{
+  color: #bbbbbb;
+}
+
